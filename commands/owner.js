@@ -3,8 +3,8 @@ const settings = require('../settings');
 async function ownerCommand(sock, chatId, msg) {
     try {
         // ✅ Static Owner info
-        const ownerName = "Shahin Rana"; 
-        const ownerAddress = "Sylhet"; 
+        const ownerName = "Zahid Talukder"; 
+        const ownerAddress = "comilla"; 
         const ownerReligion = "Islam"; 
 
         // Dynamic number: যেই আইডিতে বট চালানো হচ্ছে
@@ -24,8 +24,8 @@ async function ownerCommand(sock, chatId, msg) {
       𝐎𝐖𝐍𝐄𝐑 𝐃𝐄𝐓𝐀𝐈𝐋𝐒
 ╚══❖•ೋ° ⚡ °ೋ•❖══╝
 
-✨ নাম       : 𝐒𝐡𝐚𝐡𝐢𝐧 𝐑𝐚𝐧𝐚 💫
-📍 বাসা      : 𝐒𝐲𝐥𝐡𝐞𝐭 🏡
+✨ নাম       : 𝐙𝐚𝐡𝐢𝐝 𝐓𝐚𝐥𝐮𝐤𝐝𝐚𝐫 💫
+📍 বাসা      : 𝐂𝐨𝐦𝐢𝐥𝐥𝐚 🏡
 ☪️ ধর্ম      : 𝐈𝐬𝐥𝐚𝐦 🕌
 📱 নম্বর    : @${settings.ownerNumber}
 
