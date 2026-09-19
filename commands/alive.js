@@ -18,7 +18,7 @@ async function aliveCommand(sock, chatId, message) {
 
 *┃🎐 𝐕𝐄𝐑𝐒𝐈𝐎𝐍 : ${settings.version}*
 
-*┃👑 𝐎𝐖𝐍𝐄𝐑 :*~_🪀𝐗𝐭𝐲𝐥𝐢𝐬𝐡_ღ꙰𝐒𝐡𝐚𝐡𝐢𝐧࿐👑_~*
+*┃👑 𝐎𝐖𝐍𝐄𝐑 :*— 𝚳 𝚨 Ꭱ 𝐂 𝚶 ⤹ ☕*
 
 *╰━━━━━━━━━━━━━━━━━━╯*
 
