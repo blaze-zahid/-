@@ -4,253 +4,257 @@ const path = require('path');
 
 async function helpCommand(sock, chatId, message) {
     const helpMessage = `
-*╭┈──〔 *𓆩ု᪳𝐒𝐇𝐀𝐇𝐈𝐍-𝐗ှ᪳𓆪* 〕┈──⊷
-*┃* 💎${settings.botName || ' 𝐒𝐡𝐚𝐡𝐢𝐧 𝐑𝐚𝐧𝐚'}*  
-*┃* 💎*~_ᴠᴇʀsɪᴏɴ_~*: *${settings.version || '3.0.0'}*
-*┃* 💎 *~_ʙʏ_~* ${settings.botOwner || 'Mr Shahin Rana'}
-*┃* 💎 *~_ʏᴛ_~* : *~_ 𝐗𝐭𝐲𝐥𝐢𝐬𝐡_ღ꙰𝐒𝐡𝐚𝐡𝐢𝐧࿐_~*
-*╰─➤*💗*⎯⃝‎‎‎*𝐒𝐡𝐚𝐡𝐢𝐧 𝐑𝐚𝐧𝐚♡➪*
+*╭┈──〔 𓆩♡𓆪 𝐙𝐀𝐇𝐈𝐃-𝐗 𓆩♡𓆪 〕──┈⊷
+*┃* 💎 *${settings.botName || '— 𝚳 𝚨 Ꭱ 𝐂 𝚶 ⤹ ☕'}*
+*┃* 💎 *Version:* ${settings.version || '3.0.0'}
+*┃* 💎 *By:* ${settings.botOwner || 'Mr Shahin Rana'}
+*┃* 💎 *YT:* 𝐄𝐫𝐫𝐨𝐫 ࿐
+*╰─➤* 💗 *𝐓ᴇᴅᴅʏ.. ♡*
 
- ❒ 𝓐𝓿𝓪𝓲𝓵𝓪𝓫𝓵𝓮 𝓬𝓸𝓶𝓶𝓪𝓷𝓭𝓼:*♡︎*
+❒ Available Commands♡
 
-╭────❒ 𝓖𝓮𝓷𝓮𝓻𝓪𝓵 𝓬𝓸𝓶𝓶𝓪𝓷𝓭𝓼:❒
-├◈  *⎯⃝🩷➪‎‎‎*   𝓱𝓮𝓵𝓹 𝓸𝓻. 𝓶𝓮𝓷𝓾
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓹𝓲𝓷𝓰
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓐𝓵𝓲𝓿𝓮
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓣𝓽𝓼 <𝓽𝓮𝔁𝓽>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓞𝔀𝓷𝓮𝓻
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓙𝓸𝓴𝓮
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓠𝓾𝓸𝓽𝓮
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓕𝓪𝓬𝓽
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓦𝓱𝓮𝓪𝓽𝓱𝓮𝓻 <𝓬𝓲𝓽𝔂>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓝𝓮𝔀𝓼
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓐𝓽𝓽𝓹 <𝓽𝓮𝔁𝓽>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓛𝔂𝓻𝓲𝓬𝓼 <𝓢𝓸𝓷𝓰_𝓽𝓲𝓽𝓵𝓮>
-├◈  *⎯⃝🩷➪‎‎‎* .8𝓑𝓪𝓵𝓵 <𝓺𝓾𝓮𝓼𝓽𝓲𝓸𝓷>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓖𝓻𝓸𝓾𝓹𝓲𝓷𝓯𝓸
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓢𝓽𝓪𝓯𝓯 𝓸𝓻 .𝓪𝓭𝓶𝓲𝓷𝓼 
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓿𝓿
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓣𝓻𝓽 <𝓽𝓮𝔁𝓽> <𝓵𝓪𝓷𝓰>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓢𝓼 <𝓵𝓲𝓷𝓴>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓙𝓲𝓭
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓤𝓻𝓵
+╭────❒ General Command ❒
+├◈ 🩷➪ .help / .menu
+├◈ 🩷➪ .ping
+├◈ 🩷➪ .alive
+├◈ 🩷➪ .tts <text>
+├◈ 🩷➪ .owner
+├◈ 🩷➪ .joke
+├◈ 🩷➪ .quote
+├◈ 🩷➪ .fact
+├◈ 🩷➪ .weather <city>
+├◈ 🩷➪ .news
+├◈ 🩷➪ .attp <text>
+├◈ 🩷➪ .lyrics <song_title>
+├◈ 🩷➪ .8ball <question>
+├◈ 🩷➪ .groupinfo
+├◈ 🩷➪ .staff / .admins
+├◈ 🩷➪ .vv
+├◈ 🩷➪ .trt <text> <lang>
+├◈ 🩷➪ .ss <link>
+├◈ 🩷➪ .jid
+├◈ 🩷➪ .url
 ┕──────────────────❒
 
-╭────❒ 𝓐𝓭𝓶𝓲𝓷 𝓬𝓸𝓶𝓶𝓪𝓷𝓭𝓼:❒
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓑𝓪𝓷 @𝓾𝓼𝓮𝓻
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓹𝓻𝓸𝓶𝓸𝓽𝓮 @𝓾𝓼𝓮𝓻
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓓𝓮𝓶𝓸𝓽𝓮 @𝓾𝓼𝓮𝓻
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓶𝓾𝓽𝓮 <𝓶𝓲𝓷𝓾𝓽𝓮𝓼>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓾𝓷𝓶𝓾𝓽𝓮
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓓𝓮𝓵𝓮𝓽𝓮 𝓸𝓻 .𝓭𝓮𝓵
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓴𝓲𝓬𝓴 @𝓾𝓼𝓮𝓻
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓦𝓪𝓻𝓷𝓲𝓷𝓰𝓼 @𝓾𝓼𝓮𝓻
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓦𝓪𝓻𝓷 @𝓾𝓼𝓮𝓻
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓐𝓷𝓽𝓲𝓵𝓲𝓷𝓴
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓐𝓷𝓽𝓲𝓫𝓪𝓭𝔀𝓸𝓻𝓭
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓬𝓵𝓮𝓪𝓻
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓣𝓪𝓰 <𝓶𝓮𝓼𝓼𝓪𝓰𝓮>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓣𝓪𝓰𝓪𝓵𝓵
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓣𝓪𝓰𝓷𝓸𝓽𝓐𝓭𝓶𝓲𝓷
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓱𝓲𝓭𝓮𝓽𝓪𝓰 <𝓶𝓮𝓼𝓼𝓪𝓰𝓮>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓬𝓱𝓪𝓽𝓫𝓸𝓽
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓡𝓮𝓼𝓮𝓽 
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓪𝓷𝓽𝓲𝓽𝓪𝓰 <𝓸𝓷/𝓸𝓯𝓯>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓦𝓮𝓵𝓬𝓸𝓶𝓮 <𝓸𝓷/𝓸𝓯𝓯>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓰𝓸𝓸𝓭𝓫𝔂𝓮 <𝓸𝓷/𝓸𝓯𝓯>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓼𝓮𝓽𝓰𝓭𝓮𝓼𝓬 <𝓭𝓮𝓼𝓬𝓻𝓲𝓹𝓽𝓲𝓸𝓷>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓼𝓮𝓽𝓰𝓷𝓪𝓶𝓮 <𝓝𝓮𝔀 𝓝𝓪𝓶𝓮>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓼𝓮𝓽𝓰𝓹𝓹 (𝓻𝓮𝓹𝓵𝔂 𝓽𝓸 𝓲𝓶𝓪𝓰𝓮)
+╭────❒ Admin Command ❒
+├◈ 🩷➪ .ban @user
+├◈ 🩷➪ .promote @user
+├◈ 🩷➪ .demote @user
+├◈ 🩷➪ .mute <minutes>
+├◈ 🩷➪ .unmute
+├◈ 🩷➪ .delete / .del
+├◈ 🩷➪ .kick @user
+├◈ 🩷➪ .warnings @user
+├◈ 🩷➪ .warn @user
+├◈ 🩷➪ .antilink
+├◈ 🩷➪ .antibadword
+├◈ 🩷➪ .clear
+├◈ 🩷➪ .tag <message>
+├◈ 🩷➪ .tagall
+├◈ 🩷➪ .tagnotadmin
+├◈ 🩷➪ .hidetag <message>
+├◈ 🩷➪ .chatbot
+├◈ 🩷➪ .reset
+├◈ 🩷➪ .antitag <on/off>
+├◈ 🩷➪ .welcome <on/off>
+├◈ 🩷➪ .goodbye <on/off>
+├◈ 🩷➪ .setgdesc <description>
+├◈ 🩷➪ .setgname <new name>
+├◈ 🩷➪ .setgpp (reply to image)
 ┕──────────────────❒
 
-╭────❒ 𝓞𝔀𝓷𝓮𝓻 𝓬𝓸𝓶𝓶𝓪𝓷𝓭𝓼 ❒
-├◈  ⎯⃝🩷➪  .𝓜𝓸𝓭𝓮 <𝓹𝓾𝓫𝓵𝓲𝓬/𝓹𝓻𝓲𝓿𝓪𝓽𝓮>
-├◈  ⎯⃝🩷➪  .𝓒𝓵𝓮𝓪𝓻𝓼𝓮𝓼𝓼𝓲𝓸𝓷
-├◈  ⎯⃝🩷➪  .𝓐𝓷𝓽𝓲𝓭𝓮𝓵𝓮𝓽𝓮
-├◈  ⎯⃝🩷➪  .𝓒𝓵𝓮𝓪𝓻𝓽𝓶𝓹
-├◈  ⎯⃝🩷➪  .𝓤𝓹𝓭𝓪𝓽𝓮
-├◈  ⎯⃝🩷➪  .𝓢𝓮𝓽𝓽𝓲𝓷𝓰𝓼
-├◈  ⎯⃝🩷➪  .𝓢𝓮𝓽𝓹𝓹 <𝓻𝓮𝓹𝓵𝔂 𝓽𝓸 𝓲𝓶𝓪𝓰𝓮>
-├◈  ⎯⃝🩷➪  .𝓐𝓾𝓽𝓸𝓻𝓮𝓪𝓬𝓽 <𝓸𝓷/𝓸𝓯𝓯>
-├◈  ⎯⃝🩷➪  .𝓐𝓾𝓽𝓸𝓼𝓽𝓪𝓽𝓾𝓼 <𝓸𝓷/𝓸𝓯𝓯>
-├◈  ⎯⃝🩷➪  .𝓐𝓾𝓽𝓸𝓼𝓽𝓪𝓽𝓾𝓼 𝓻𝓮𝓪𝓬𝓽 <𝓸𝓷/𝓸𝓯𝓯>
-├◈  ⎯⃝🩷➪  .𝓐𝓾𝓽𝓸𝓽𝔂𝓹𝓲𝓷𝓰 <𝓸𝓷/𝓸𝓯𝓯>
-├◈  ⎯⃝🩷➪  .𝓐𝓾𝓽𝓸𝓻𝓮𝓪𝓭 <𝓸𝓷/𝓸𝓯𝓯>
-├◈  ⎯⃝🩷➪  .𝓐𝓷𝓽𝓲𝓬𝓪𝓵𝓵 <𝓸𝓷/𝓸𝓯𝓯>
-├◈  ⎯⃝🩷➪  .𝓟𝓶𝓫𝓵𝓸𝓬𝓴𝓮𝓻 <𝓸𝓷/𝓸𝓯𝓯/𝓼𝓽𝓪𝓽𝓾𝓼>
-├◈  ⎯⃝🩷➪  .𝓟𝓶𝓫𝓵𝓸𝓬𝓴𝓮𝓻 𝓼𝓮𝓽𝓶𝓼𝓰 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓢𝓮𝓽𝓶𝓮𝓷𝓽𝓲𝓸𝓷 <𝓻𝓮𝓹𝓵𝔂 𝓽𝓸 𝓶𝓼𝓰>
-├◈  ⎯⃝🩷➪  .𝓜𝓮𝓷𝓽𝓲𝓸𝓷 <𝓸𝓷/𝓸𝓯𝓯>
+╭────❒ Owner Command ❒
+├◈ 🩷➪ .mode <public/private>
+├◈ 🩷➪ .clearsession
+├◈ 🩷➪ .antidelete
+├◈ 🩷➪ .cleartmp
+├◈ 🩷➪ .update
+├◈ 🩷➪ .settings
+├◈ 🩷➪ .setpp <reply to image>
+├◈ 🩷➪ .autoreact <on/off>
+├◈ 🩷➪ .autostatus <on/off>
+├◈ 🩷➪ .autostatus react <on/off>
+├◈ 🩷➪ .autotyping <on/off>
+├◈ 🩷➪ .autoread <on/off>
+├◈ 🩷➪ .anticall <on/off>
+├◈ 🩷➪ .pmblocker <on/off/status>
+├◈ 🩷➪ .pmblocker setmsg <text>
+├◈ 🩷➪ .setmention <reply to msg>
+├◈ 🩷➪ .mention <on/off>
 ┕──────────────────❒
 
-╭────❒ 𝓘𝓶𝓪𝓰𝓮 / 𝓢𝓽𝓲𝓬𝓴𝓮𝓻 𝓬𝓸𝓶𝓶𝓪𝓷𝓭𝓼 ❒
-├◈  ⎯⃝🩷➪  .𝓑𝓵𝓾𝓻 <𝓲𝓶𝓪𝓰𝓮>
-├◈  ⎯⃝🩷➪  .𝓢𝓲𝓶𝓪𝓰𝓮 <𝓻𝓮𝓹𝓵𝔂 𝓽𝓸 𝓼𝓽𝓲𝓬𝓴𝓮𝓻>
-├◈  ⎯⃝🩷➪  .𝓢𝓽𝓲𝓬𝓴𝓮𝓻 <𝓻𝓮𝓹𝓵𝔂 𝓽𝓸 𝓲𝓶𝓪𝓰𝓮>
-├◈  ⎯⃝🩷➪  .𝓡𝓮𝓶𝓸𝓿𝓮𝓫𝓰
-├◈  ⎯⃝🩷➪  .𝓡𝓮𝓶𝓲𝓷𝓲
-├◈  ⎯⃝🩷➪  .𝓒𝓻𝓸𝓹 <𝓻𝓮𝓹𝓵𝔂 𝓽𝓸 𝓲𝓶𝓪𝓰𝓮>
-├◈  ⎯⃝🩷➪  .𝓣𝓰𝓼𝓽𝓲𝓬𝓴𝓮𝓻 <𝓛𝓲𝓷𝓴>
-├◈  ⎯⃝🩷➪  .𝓜𝓮𝓶𝓮
-├◈  ⎯⃝🩷➪  .𝓣𝓪𝓴𝓮 <𝓹𝓪𝓬𝓴𝓷𝓪𝓶𝓮>
-├◈  ⎯⃝🩷➪  .𝓔𝓶𝓸𝓳𝓲𝓶𝓲𝔁 <𝓮𝓶𝓳1>+<𝓮𝓶𝓳2>
-├◈  ⎯⃝🩷➪  .𝓘𝓰𝓼 <𝓲𝓷𝓼𝓽𝓪 𝓵𝓲𝓷𝓴>
-├◈  ⎯⃝🩷➪  .𝓘𝓰𝓼𝓬 <𝓲𝓷𝓼𝓽𝓪 𝓵𝓲𝓷𝓴>
+╭────❒ Image / Sticker Command ❒
+├◈ 🩷➪ .blur <image>
+├◈ 🩷➪ .simage <reply to sticker>
+├◈ 🩷➪ .sticker <reply to image>
+├◈ 🩷➪ .removebg
+├◈ 🩷➪ .remini
+├◈ 🩷➪ .crop <reply to image>
+├◈ 🩷➪ .tgsticker <link>
+├◈ 🩷➪ .meme
+├◈ 🩷➪ .take <packname>
+├◈ 🩷➪ .emojimix <emoji1>+<emoji2>
+├◈ 🩷➪ .igs <insta link>
+├◈ 🩷➪ .igsc <insta link>
 ┕──────────────────❒
 
-╭────❒ 𝓟𝓲𝓮𝓼 𝓬𝓸𝓶𝓶𝓪𝓷𝓭𝓼 ❒
-├◈  ⎯⃝🩷➪  .𝓟𝓲𝓮𝓼 <𝓬𝓸𝓾𝓷𝓽𝓻𝔂>
-├◈  ⎯⃝🩷➪  .𝓒𝓱𝓲𝓷𝓪
-├◈  ⎯⃝🩷➪  .𝓘𝓷𝓭𝓸𝓷𝓮𝓼𝓲𝓪
-├◈  ⎯⃝🩷➪  .𝓙𝓪𝓹𝓪𝓷
-├◈  ⎯⃝🩷➪  .𝓚𝓸𝓻𝓮𝓪
-├◈  ⎯⃝🩷➪  .𝓗𝓲𝓳𝓪𝓫
+╭────❒ Pies Command ❒
+├◈ 🩷➪ .pies <country>
+├◈ 🩷➪ .china
+├◈ 🩷➪ .indonesia
+├◈ 🩷➪ .japan
+├◈ 🩷➪ .korea
+├◈ 🩷➪ .hijab
 ┕──────────────────❒
 
-╭────❒ 𝓖𝓪𝓶𝓮 𝓬𝓸𝓶𝓶𝓪𝓷𝓭𝓼 ❒
-├◈  ⎯⃝🩷➪  .𝓣𝓲𝓬𝓽𝓪𝓬𝓽𝓸𝓮 @𝓾𝓼𝓮𝓻
-├◈  ⎯⃝🩷➪  .𝓗𝓪𝓷𝓰𝓶𝓪𝓷
-├◈  ⎯⃝🩷➪  .𝓖𝓾𝓮𝓼𝓼 <𝓵𝓮𝓽𝓽𝓮𝓻>
-├◈  ⎯⃝🩷➪  .𝓣𝓻𝓲𝓿𝓲𝓪
-├◈  ⎯⃝🩷➪  .𝓐𝓷𝓼𝔀𝓮𝓻 <𝓪𝓷𝓼𝔀𝓮𝓻>
-├◈  ⎯⃝🩷➪  .𝓣𝓻𝓾𝓽𝓱
-├◈  ⎯⃝🩷➪  .𝓓𝓪𝓻𝓮
+╭────❒ Game Command ❒
+├◈ 🩷➪ .tictactoe @user
+├◈ 🩷➪ .hangman
+├◈ 🩷➪ .guess <letter>
+├◈ 🩷➪ .trivia
+├◈ 🩷➪ .answer <answer>
+├◈ 🩷➪ .truth
+├◈ 🩷➪ .dare
 ┕──────────────────❒
 
-╭────❒ 𝓐𝓲 𝓬𝓸𝓶𝓶𝓪𝓷𝓭𝓼 ❒
-├◈  ⎯⃝🩷➪  .𝓖𝓹𝓽 <𝓺𝓾𝓮𝓼𝓽𝓲𝓸𝓷>
-├◈  ⎯⃝🩷➪  .𝓖𝓮𝓶𝓲𝓷𝓲 <𝓺𝓾𝓮𝓼𝓽𝓲𝓸𝓷>
-├◈  ⎯⃝🩷➪  .𝓘𝓶𝓪𝓰𝓲𝓷𝓮 <𝓹𝓻𝓸𝓶𝓹𝓽>
-├◈  ⎯⃝🩷➪  .𝓕𝓵𝓾𝔁 <𝓹𝓻𝓸𝓶𝓹𝓽>
-├◈  ⎯⃝🩷➪  .𝓢𝓸𝓻𝓪 <𝓹𝓻𝓸𝓶𝓹𝓽>
+╭────❒ AI Command ❒
+├◈ 🩷➪ .gpt <question>
+├◈ 🩷➪ .gemini <question>
+├◈ 🩷➪ .imagine <prompt>
+├◈ 🩷➪ .flux <prompt>
+├◈ 🩷➪ .sora <prompt>
 ┕──────────────────❒
 
-╭────❒ 𝓕𝓾𝓷 𝓬𝓸𝓶𝓶𝓪𝓷𝓭𝓼 ❒
-├◈  ⎯⃝🩷➪  .𝓒𝓸𝓶𝓹𝓵𝓲𝓶𝓮𝓷𝓽 @𝓾𝓼𝓮𝓻
-├◈  ⎯⃝🩷➪  .𝓘𝓷𝓼𝓾𝓵𝓽 @𝓾𝓼𝓮𝓻
-├◈  ⎯⃝🩷➪  .𝓕𝓵𝓲𝓻𝓽
-├◈  ⎯⃝🩷➪  .𝓢𝓱𝓪𝔂𝓪𝓻𝓲
-├◈  ⎯⃝🩷➪  .𝓖𝓸𝓸𝓭𝓷𝓲𝓰𝓱𝓽
-├◈  ⎯⃝🩷➪  .𝓡𝓸𝓼𝓮𝓭𝓪𝔂
-├◈  ⎯⃝🩷➪  .𝓒𝓱𝓪𝓻𝓪𝓬𝓽𝓮𝓻 @𝓾𝓼𝓮𝓻
-├◈  ⎯⃝🩷➪  .𝓦𝓪𝓼𝓽𝓮𝓭 @𝓾𝓼𝓮𝓻
-├◈  ⎯⃝🩷➪  .𝓢𝓱𝓲𝓹 @𝓾𝓼𝓮𝓻
-├◈  ⎯⃝🩷➪  .𝓢𝓲𝓶𝓹 @𝓾𝓼𝓮𝓻
-├◈  ⎯⃝🩷➪  .𝓢𝓽𝓾𝓹𝓲𝓭 @𝓾𝓼𝓮𝓻 [𝓽𝓮𝔁𝓽]
+╭────❒ Fun Command ❒
+├◈ 🩷➪ .compliment @user
+├◈ 🩷➪ .insult @user
+├◈ 🩷➪ .flirt
+├◈ 🩷➪ .shayari
+├◈ 🩷➪ .goodnight
+├◈ 🩷➪ .roseday
+├◈ 🩷➪ .character @user
+├◈ 🩷➪ .wasted @user
+├◈ 🩷➪ .ship @user
+├◈ 🩷➪ .simp @user
+├◈ 🩷➪ .stupid @user [text]
 ┕──────────────────❒
 
-╭────❒ 𝓣𝓮𝔁𝓽𝓶𝓪𝓴𝓮𝓻 ❒
-├◈  ⎯⃝🩷➪  .𝓜𝓮𝓽𝓪𝓵𝓵𝓲𝓬 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓘𝓬𝓮 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓢𝓷𝓸𝔀 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓘𝓶𝓹𝓻𝓮𝓼𝓼𝓲𝓿𝓮 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓜𝓪𝓽𝓻𝓲𝔁 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓛𝓲𝓰𝓱𝓽 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓝𝓮𝓸𝓷 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓓𝓮𝓿𝓲𝓵 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓟𝓾𝓻𝓹𝓵𝓮 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓣𝓱𝓾𝓷𝓭𝓮𝓻 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓛𝓮𝓪𝓿𝓮𝓼 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .1917 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓐𝓻𝓮𝓷𝓪 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓗𝓪𝓬𝓴𝓮𝓻 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓑𝓵𝓪𝓬𝓴𝓹𝓲𝓷𝓴 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓖𝓵𝓲𝓽𝓬𝓱 <𝓽𝓮𝔁𝓽>
-├◈  ⎯⃝🩷➪  .𝓕𝓲𝓻𝓮 <𝓽𝓮𝔁𝓽>
+╭────❒ Text Marker Command ❒
+├◈ 🩷➪ .metallic <text>
+├◈ 🩷➪ .ice <text>
+├◈ 🩷➪ .snow <text>
+├◈ 🩷➪ .impressive <text>
+├◈ 🩷➪ .matrix <text>
+├◈ 🩷➪ .light <text>
+├◈ 🩷➪ .neon <text>
+├◈ 🩷➪ .devil <text>
+├◈ 🩷➪ .purple <text>
+├◈ 🩷➪ .thunder <text>
+├◈ 🩷➪ .leaves <text>
+├◈ 🩷➪ .1917 <text>
+├◈ 🩷➪ .arena <text>
+├◈ 🩷➪ .hacker <text>
+├◈ 🩷➪ .blackpink <text>
+├◈ 🩷➪ .glitch <text>
+├◈ 🩷➪ .fire <text>
 ┕──────────────────❒
 
-╭────❒ 𝓓𝓸𝔀𝓷𝓵𝓸𝓭𝓮𝓻:❒
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓹𝓵𝓪𝔂 <𝓼𝓸𝓷𝓰_𝓷𝓪𝓶𝓮>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓼𝓸𝓷𝓰 <𝓼𝓸𝓷𝓰_𝓷𝓪𝓶𝓮>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓼𝓹𝓸𝓽𝓲𝓯𝔂 <𝓺𝓾𝓮𝓻𝔂>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓲𝓷𝓼𝓽𝓪𝓰𝓻𝓪𝓶 <𝓵𝓲𝓷𝓴>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓯𝓪𝓬𝓮𝓫𝓸𝓸𝓴 <𝓵𝓲𝓷𝓴>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓽𝓲𝓴𝓽𝓸𝓴 <𝓵𝓲𝓷𝓴>
-├◈  *⎯⃝🩷➪‎‎‎*  .𝓿𝓲𝓭𝓮𝓸 <𝓼𝓸𝓷𝓰 𝓷𝓪𝓶𝓮>
-├◈  *⎯⃝🩷➪‎‎‎*  . <𝓵𝓲𝓷𝓴>
+╭────❒ Downloader ❒
+├◈ 🩷➪ .play <song_name>
+├◈ 🩷➪ .song <song_name>
+├◈ 🩷➪ .spotify <query>
+├◈ 🩷➪ .instagram <link>
+├◈ 🩷➪ .facebook <link>
+├◈ 🩷➪ .tiktok <link>
+├◈ 🩷➪ .video <song name>
+├◈ 🩷➪ .<link>
 ┕──────────────────❒
 
-╭────❒ 𝓜𝓲𝓼𝓬:❒
-├◈  *⎯⃝🩷➪‎‎‎* .𝓗𝓮𝓪𝓻𝓽
-├◈  *⎯⃝🩷➪‎‎‎* .𝓱𝓸𝓻𝓷𝓮𝔂
-├◈  *⎯⃝🩷➪‎‎‎* .𝓬𝓲𝓻𝓬𝓵𝓮
-├◈  *⎯⃝🩷➪‎‎‎* .𝓛𝓰𝓫𝓽
-├◈  *⎯⃝🩷➪‎‎‎* .𝓛𝓸𝓵𝓲𝓬𝓮
-├◈  *⎯⃝🩷➪‎‎‎* .𝓵𝓽𝓼-𝓼𝓸-𝓼𝓽𝓾𝓹𝓲𝓭
-├◈  *⎯⃝🩷➪‎‎‎* .𝓷𝓪𝓶𝓮𝓬𝓪𝓻𝓭 
-├◈  *⎯⃝🩷➪‎‎‎* .𝓸𝓸𝓰𝔀𝓪𝔂
-├◈  *⎯⃝🩷➪‎‎‎* .𝓽𝔀𝓮𝓮𝓽
-├◈  *⎯⃝🩷➪‎‎‎* .𝔂𝓽𝓬𝓸𝓶𝓶𝓮𝓷𝓽 
-├◈  *⎯⃝🩷➪‎‎‎* .𝓬𝓸𝓶𝓻𝓪𝓭𝓮 
-├◈  *⎯⃝🩷➪‎‎‎* .𝓰𝓪𝔂 
-├◈  *⎯⃝🩷➪‎‎‎* .𝓰𝓵𝓪𝓼𝓼 
-├◈  *⎯⃝🩷➪‎‎‎* .𝓳𝓪𝓲𝓵 
-├◈  *⎯⃝🩷➪‎‎‎* .𝓹𝓪𝓼𝓼𝓮𝓭 
-├◈  *⎯⃝🩷➪‎‎‎* .𝓽𝓻𝓲𝓰𝓰𝓮𝓻𝓮𝓭
+╭────❒ Miscellaneous ❒
+├◈ 🩷➪ .heart
+├◈ 🩷➪ .horney
+├◈ 🩷➪ .circle
+├◈ 🩷➪ .lgbt
+├◈ 🩷➪ .lolice
+├◈ 🩷➪ .lts-so-stupid
+├◈ 🩷➪ .namecard
+├◈ 🩷➪ .oogway
+├◈ 🩷➪ .tweet
+├◈ 🩷➪ .ytcomment
+├◈ 🩷➪ .comrade
+├◈ 🩷➪ .gay
+├◈ 🩷➪ .glass
+├◈ 🩷➪ .jail
+├◈ 🩷➪ .passed
+├◈ 🩷➪ .triggered
 ┕──────────────────❒
 
-╭────❒ 𝓐𝓷𝓲𝓶𝓮:❒
-├◈  *⎯⃝🩷➪‎‎‎* .𝓷𝓸𝓶 
-├◈  *⎯⃝🩷➪‎‎‎* .𝓹𝓸𝓴𝓮 
-├◈  *⎯⃝🩷➪‎‎‎* .𝓬𝓻𝔂 
-├◈  *⎯⃝🩷➪‎‎‎* .𝓴𝓲𝓼𝓼 
-├◈  *⎯⃝🩷➪‎‎‎* .𝓹𝓪𝓽 
-├◈  *⎯⃝🩷➪‎‎‎* .𝓱𝓾𝓰 
-├◈  *⎯⃝🩷➪‎‎‎* .𝔀𝓲𝓷𝓴 
-├◈  *⎯⃝🩷➪‎‎‎* .𝓯𝓪𝓬𝓮𝓹𝓪𝓵𝓶 
+╭────❒ Anime ❒
+├◈ 🩷➪ .nom
+├◈ 🩷➪ .poke
+├◈ 🩷➪ .cry
+├◈ 🩷➪ .kiss
+├◈ 🩷➪ .pat
+├◈ 🩷➪ .hug
+├◈ 🩷➪ .wink
+├◈ 🩷➪ .facepalm
 ┕──────────────────❒
 
-╭────❒ 𝓖𝓲𝓽𝓱𝓾𝓫 𝓬𝓸𝓶𝓶𝓪𝓷𝓭𝓼:❒
-├◈  *⎯⃝🩷➪‎‎‎* .𝓰𝓲𝓽
-├◈  *⎯⃝🩷➪‎‎‎* .𝓖𝓲𝓽𝓱𝓾𝓫
-├◈  *⎯⃝🩷➪‎‎‎* .𝓼𝓬
-├◈  *⎯⃝🩷➪‎‎‎* .𝓼𝓬𝓻𝓲𝓹𝓽
-├◈  *⎯⃝🩷➪‎‎‎* .𝓡𝓮𝓹𝓸
+╭────❒ GitHub Command❒
+├◈ 🩷➪ .git
+├◈ 🩷➪ .github
+├◈ 🩷➪ .sc
+├◈ 🩷➪ .script
+├◈ 🩷➪ .repo
 ┕──────────────────❒
 
-
-
-
-
-💖 *~_Made with love by Shahin -Rana_~*:`;
+💖 *Made with love by — 𝚳 𝚨 Ꭱ 𝐂 𝚶 ⤹ ☕*`;
 
     try {
         const imagePath = path.join(__dirname, '../assets/bot_image.jpg');
-        
+
+        const contextInfo = {
+            forwardingScore: 1,
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363161513685998@newsletter',
+                newsletterName: 'SHAHIN RANA',
+                serverMessageId: -1
+            }
+        };
+
         if (fs.existsSync(imagePath)) {
             const imageBuffer = fs.readFileSync(imagePath);
-            
-            await sock.sendMessage(chatId, {
-                image: imageBuffer,
-                caption: helpMessage,
-                contextInfo: {
-                    forwardingScore: 1,
-                    isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363161513685998@newsletter',
-                        newsletterName: 'SHAHIN RANA',
-                        serverMessageId: -1
-                    }
-                }
-            },{ quoted: message });
+
+            await sock.sendMessage(
+                chatId,
+                {
+                    image: imageBuffer,
+                    caption: helpMessage,
+                    contextInfo
+                },
+                { quoted: message }
+            );
         } else {
             console.error('Bot image not found at:', imagePath);
-            await sock.sendMessage(chatId, { 
-                text: helpMessage,
-                contextInfo: {
-                    forwardingScore: 1,
-                    isForwarded: true,
-                    forwardedNewsletterMessageInfo: {
-                        newsletterJid: '120363161513685998@newsletter',
-                        newsletterName: 'Shahin bot by Mr Shahin Rana',
-                        serverMessageId: -1
-                    } 
-                }
-            });
+
+            await sock.sendMessage(
+                chatId,
+                {
+                    text: helpMessage,
+                    contextInfo
+                },
+                { quoted: message }
+            );
         }
     } catch (error) {
         console.error('Error in help command:', error);
-        await sock.sendMessage(chatId, { text: helpMessage });
+
+        await sock.sendMessage(
+            chatId,
+            { text: helpMessage },
+            { quoted: message }
+        );
     }
 }
 
