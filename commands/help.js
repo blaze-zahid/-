@@ -5,11 +5,11 @@ const path = require('path');
 async function helpCommand(sock, chatId, message) {
     const helpMessage = `
 *╭┈──〔 𓆩♡𓆪 𝐙𝐀𝐇𝐈𝐃-𝐗 𓆩♡𓆪 〕──┈⊷
-*┃* 💎 *${settings.botName || '— 𝚳 𝚨 Ꭱ 𝐂 𝚶 ⤹ ☕'}*
+*┃* 💎 *${settings.botName || '𝐋ᴜꜰɪ..!'}*
 *┃* 💎 *Version:* ${settings.version || '3.0.0'}
-*┃* 💎 *By:* ${settings.botOwner || 'Mr Shahin Rana'}
+*┃* 💎 *By:* ${settings.botOwner || '— 𝚳 𝚨 Ꭱ 𝐂 𝚶 ⤹ ☕'}
 *┃* 💎 *YT:* 𝐄𝐫𝐫𝐨𝐫 ࿐
-*╰─➤* 💗 *𝐓ᴇᴅᴅʏ.. ♡*
+*╰─➤* 💗 *𝐓ᴇᴅᴅʏ.. 👅*
 
 ❒ Available Commands♡
 
@@ -218,7 +218,7 @@ async function helpCommand(sock, chatId, message) {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363161513685998@newsletter',
-                newsletterName: 'SHAHIN RANA',
+                newsletterName: '𝐅𝐮𝐜𝐤 𝐘𝐨𝐮 🤡',
                 serverMessageId: -1
             }
         };
