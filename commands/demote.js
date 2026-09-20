@@ -41,7 +41,7 @@ async function demoteCommand(sock, chatId, mentionedJids, message) {
 │   └─ দায়িত্ব চলে গেলেও আপনি আমাদের গ্রুপের একজন সম্মানিত সদস্য।
 │      ভুল থেকে শিক্ষা নিয়ে আবারও ঘুরে দাঁড়াবেন 🤍
 │
-╰─➤ Powered by ~⎯͢⎯⃝🩷➪‎‎‎Shahin Rana♡●➪`;
+╰─➤ Powered by — 𝚳 𝚨 Ꭱ 𝐂 𝚶 ⤹ ☕`;
 
         await sock.sendMessage(chatId, {
             text: demoteMessage,
@@ -95,7 +95,7 @@ async function handleDemotionEvent(sock, groupId, participants, author) {
 │   └─ দায়িত্ব চলে গেলেও আপনি আমাদের গ্রুপের একজন সম্মানিত সদস্য।
 │      ভুল থেকে শিক্ষা নিয়ে আবারও ঘুরে দাঁড়াবেন 🤍
 │
-╰─➤ Powered by ~⎯͢⎯⃝🩷➪‎‎‎Shahin Rana♡●➪`;
+╰─➤ Powered by — 𝚳 𝚨 Ꭱ 𝐂 𝚶 ⤹ ☕;
 
         await sock.sendMessage(groupId, {
             text: demoteMessage,
