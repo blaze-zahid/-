@@ -39,7 +39,7 @@ async function tagAllCommand(sock, chatId, senderId, message) {
 
     text += `╰────────────❍
 
-💬 Sent with Love by 𓆩Xtylish-Shahin𓆪 🖤
+💬 Sent with Love by 𝐓𝐞𝐝𝐝𝐲.. 👅 🖤
 💗 Stay Active — Stay Stylish! ✨
 `;
 
