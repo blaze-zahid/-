@@ -30,7 +30,7 @@ async function ownerCommand(sock, chatId, msg) {
 📱 নম্বর    : @${settings.ownerNumber}
 
 ╔══❖•ೋ° ⚡ °ೋ•❖══╗
-       𝐋𝐨𝐯𝐞 𝐰𝐢𝐭𝐡 𝐒𝐡𝐚𝐡𝐢𝐧 𝐑𝐚𝐧𝐚
+       𝐋𝐨𝐯𝐞 𝐰𝐢𝐭𝐡 𝐓𝐞𝐝𝐝𝐲 😴
 ╚══❖•ೋ° ⚡ °ೋ•❖══╝
 `.trim();
 
