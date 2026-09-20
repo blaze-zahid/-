@@ -15,7 +15,7 @@ async function ownerCommand(sock, chatId, msg) {
         try {
             pp = await sock.profilePictureUrl(ownerNumber, 'image');
         } catch {
-            pp = 'https://i.imgur.com/2wzGhpF.jpeg'; // Default image
+            pp = 'https://i.postimg.cc/02bN6p21/c47a32263f14b5099d115200dd74f747.jpg'; // Default image
         }
 
         // Create fancy owner text with emojis
